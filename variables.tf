@@ -91,3 +91,70 @@ variable "NSG-name" {
     type = string
     description = "Network Security Group Name"
 }
+
+variable "PTS-sb-name" {
+    type = string
+    description = "point to site subnet name"
+}
+variable "PTS-sb-address_prefixes" {
+    type = list(string)
+    description = "Point to site subnet address prefix"
+}
+variable "PTS-LNGonpremise-name" {
+    type = string
+    description = "Point to site local network gateway name"
+}
+variable "PTS-LNGonpremise-gateway_address" {
+    description = "Local network gateway address"
+}
+variable "PTS-LNGonpremise-address_space" {
+    description = "local network gateway address space"
+}
+variable "PTS-pip-name" {
+    type = string
+    description = "Point to site public ip name"
+}
+variable "PTS-pip-allocation_method" {
+    type = string
+    description = "Point to site pubic ip allocation method"
+}
+variable "PTS-VNG-name" {
+    type = string
+    description = "Point to site virtual network gateway name"
+}
+variable "PTS-VNG-type" {
+    type = string
+    description = "Point to site virtual network gateway type"
+}
+variable "PTS-VNG-vpn_type" {
+    type = string
+    description = "Point to site virtual network vpn type"
+}
+variable "PTS-VNG-active_active" {
+    type = string
+    description = "Point to site vpn active active"
+}
+variable "PTS-VNG-enable_bgp" {
+    type = string
+    description = "Point to site virtual gateway bgp enable option"
+}
+variable "PTS-VNG-sku" {
+    type = string
+    description = "Point to site Virtual network gateway sku type"
+}
+variable "PTS-VNG-ipc-private_ip_address_allocation" {
+    type = string
+    description = "Dynamic"
+}
+variable "PTS-VNGC-name" {
+    type = string
+    description = "Point to site virtual network gateway connection name"
+}
+variable "PTS-VNGC-type" {
+    type = string
+    description = "Point to site virtual network gateway connection type"
+}
+variable "PTS-VNGC-shared_key" {
+    type = string
+    description = "Point to site Virtual network gateway shared key"
+}
